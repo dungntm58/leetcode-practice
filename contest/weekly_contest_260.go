@@ -20,7 +20,33 @@ package contest
 // The maximum difference occurs with i = 0 and j = 3, nums[j] - nums[i] = 10 - 1 = 9.
 
 func MaximumDifference(nums []int) int {
-	result := 0
+	result := -1
+	length := len(nums)
+	rightMax := make([]int, length)
+	leftMin := make([]int, length)
+
+	max := nums[length-1]
+	rightMax[length-1] = max
+	for i := length - 2; i >= 0; i-- {
+		if nums[i] > max {
+			max = nums[i]
+		}
+		rightMax[i] = max
+	}
+	min := nums[0]
+	leftMin[0] = min
+	for i := 1; i < length; i++ {
+		if nums[i] < min {
+			min = nums[i]
+		}
+		leftMin[i] = min
+	}
+	for i := 0; i < length; i++ {
+		diff := rightMax[i] - leftMin[i]
+		if diff > 0 && diff > result {
+			result = diff
+		}
+	}
 	return result
 }
 

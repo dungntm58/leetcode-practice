@@ -14,6 +14,7 @@ func main() {
 
 	// detectSquare()
 
+	// fmt.Println(contest.MaximumDifference([]int{7, 1, 5, 4}))
 }
 
 func detectSquare() {
