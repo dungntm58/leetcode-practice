@@ -15,6 +15,9 @@ func main() {
 	// detectSquare()
 
 	// fmt.Println(contest.MaximumDifference([]int{7, 1, 5, 4}))
+	// fmt.Println(contest.GridGame([][]int{{2, 5, 4}, {1, 5, 1}}))
+	// fmt.Println(contest.GridGame([][]int{{1, 3, 1, 15}, {1, 3, 3, 1}}))
+	// fmt.Println(contest.GridGame([][]int{{20, 3, 20, 17, 2, 12, 15, 17, 4, 15}, {20, 10, 13, 14, 15, 5, 2, 3, 14, 3}}))
 }
 
 func detectSquare() {

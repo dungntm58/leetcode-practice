@@ -77,7 +77,29 @@ func MaximumDifference(nums []int) int {
 // The second robot will collect 0 + 1 + 3 + 3 + 0 = 7 points.
 
 func GridGame(grid [][]int) int64 {
-	var result int64 = 0
+	n := len(grid[0])
+	if n == 1 {
+		return 0
+	}
+	topRightSum := make([]int64, n)
+	topRightSum[n-1] = int64(grid[0][n-1])
+	for i := n - 2; i >= 0; i-- {
+		topRightSum[i] = topRightSum[i+1] + int64(grid[0][i])
+	}
+	var result int64 = topRightSum[1]
+	var bottomResult int64 = 0
+	for i := 1; i < n; i++ {
+		bottomResult += int64(grid[1][i-1])
+		var s int64
+		if i == n-1 || bottomResult > topRightSum[i+1] {
+			s = bottomResult
+		} else {
+			s = topRightSum[i+1]
+		}
+		if s < result {
+			result = s
+		}
+	}
 	return result
 }
 
