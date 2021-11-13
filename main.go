@@ -20,6 +20,7 @@ func main() {
 	// fmt.Println(contest.GridGame([][]int{{20, 3, 20, 17, 2, 12, 15, 17, 4, 15}, {20, 10, 13, 14, 15, 5, 2, 3, 14, 3}}))
 	// fmt.Println(top_question.MinStartValue([]int{-3, 2, -3, 4, 2}))
 	// fmt.Println(top_question.Multiply("2", "3"))
+	// fmt.Println(top_question.DailyTemperatures([]int{73, 74, 75, 71, 69, 72, 76, 73}))
 }
 
 func detectSquare() {
