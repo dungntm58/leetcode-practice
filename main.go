@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"main/contest"
+	"main/top_question"
 )
 
 func main() {
@@ -21,6 +22,8 @@ func main() {
 	// fmt.Println(top_question.MinStartValue([]int{-3, 2, -3, 4, 2}))
 	// fmt.Println(top_question.Multiply("2", "3"))
 	// fmt.Println(top_question.DailyTemperatures([]int{73, 74, 75, 71, 69, 72, 76, 73}))
+
+	// iterate_combination()
 }
 
 func detectSquare() {
@@ -41,6 +44,19 @@ func detectSquare() {
 			obj.Add(points[i])
 		case "count":
 			fmt.Println(obj.Count(points[i]))
+		}
+	}
+}
+
+func iterate_combination() {
+	actions := []string{"next", "hasNext", "next", "hasNext", "next", "hasNext", "next", "hasNext", "next", "hasNext"}
+	obj := top_question.Constructor("abcd", 2)
+	for i := 0; i < len(actions); i++ {
+		switch actions[i] {
+		case "next":
+			fmt.Println(obj.Next())
+		case "hasNext":
+			fmt.Println(obj.HasNext())
 		}
 	}
 }
