@@ -26,6 +26,12 @@ func main() {
 	// iterate_combination()
 	// fmt.Println(top_question.LargestDivisibleSubset([]int{1, 2, 4, 8, 9}))
 	// fmt.Println(top_question.MaxProfit_II([]int{7, 1, 5, 3, 6, 4}))
+
+	// top_question.MergeKLists([]*top_question.ListNode{
+	// 	top_question.NewListNode([]int{1, 4, 5}),
+	// 	top_question.NewListNode([]int{1, 3, 4}),
+	// 	top_question.NewListNode([]int{2, 6}),
+	// }).PrintAll()
 }
 
 func detectSquare() {
