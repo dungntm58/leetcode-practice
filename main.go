@@ -36,6 +36,13 @@ func main() {
 	// list := top_question.NewListNode([]int{1, 2, 3, 4, 5})
 	// top_question.ReorderList(list)
 	// list.PrintAll()
+
+	// tree := top_question.BuildTree([]int{9, 3, 15, 20, 7}, []int{9, 15, 7, 20, 3})
+	// tree.PreorderTraverse()
+	// fmt.Println()
+	// tree.InorderTraverse()
+	// fmt.Println()
+	// tree.PostorderTraverse()
 }
 
 func detectSquare() {
