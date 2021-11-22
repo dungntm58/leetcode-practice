@@ -37,3 +37,11 @@ func (node *TreeNode) InorderTraverse() {
 		node.Right.InorderTraverse()
 	}
 }
+
+func minValueNode(root *TreeNode) *TreeNode {
+	curr := root
+	for curr != nil && curr.Left != nil {
+		curr = curr.Left
+	}
+	return curr
+}
