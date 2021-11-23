@@ -43,6 +43,7 @@ func main() {
 	// tree.InorderTraverse()
 	// fmt.Println()
 	// tree.PostorderTraverse()
+	// fmt.Println(top_question.LargestComponentSize([]int{4, 6, 15, 35}))
 }
 
 func detectSquare() {
