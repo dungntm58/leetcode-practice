@@ -44,6 +44,7 @@ func main() {
 	// fmt.Println()
 	// tree.PostorderTraverse()
 	// fmt.Println(top_question.LargestComponentSize([]int{4, 6, 15, 35}))
+	// fmt.Println(top_question.Merge([][]int{{2, 3}, {4, 5}, {6, 7}, {1, 10}}))
 }
 
 func detectSquare() {
