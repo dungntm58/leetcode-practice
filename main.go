@@ -46,6 +46,9 @@ func main() {
 	// fmt.Println(top_question.LargestComponentSize([]int{4, 6, 15, 35}))
 	// fmt.Println(top_question.Merge([][]int{{2, 3}, {4, 5}, {6, 7}, {1, 10}}))
 	// fmt.Println(top_question.AllPathsSourceTarget([][]int{{4, 3, 1}, {3, 2, 4}, {3}, {4}, {}}))
+	// for _, n := range top_question.SplitListToParts(top_question.NewListNodeConsecutiveInRange(0, 3), 3) {
+	// 	n.PrintAll()
+	// }
 }
 
 func detectSquare() {
