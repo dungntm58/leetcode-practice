@@ -25,3 +25,13 @@ func NewListNode(arr []int) *ListNode {
 	}
 	return head.Next
 }
+
+func NewListNodeConsecutiveInRange(lower int, upper int) *ListNode {
+	head := &ListNode{}
+	next := head
+	for i := lower; i <= upper; i++ {
+		next.Next = &ListNode{Val: i}
+		next = next.Next
+	}
+	return head.Next
+}
