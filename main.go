@@ -49,6 +49,7 @@ func main() {
 	// for _, n := range top_question.SplitListToParts(top_question.NewListNodeConsecutiveInRange(0, 3), 3) {
 	// 	n.PrintAll()
 	// }
+	// streamChecker()
 }
 
 func detectSquare() {
@@ -83,5 +84,13 @@ func iterate_combination() {
 		case "hasNext":
 			fmt.Println(obj.HasNext())
 		}
+	}
+}
+
+func streamChecker() {
+	obj := top_question.ConstructorStreamChecker([]string{"cd", "f", "kl"})
+	params := []byte{'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l'}
+	for _, p := range params {
+		fmt.Println(obj.Query(p))
 	}
 }

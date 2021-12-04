@@ -29,6 +29,10 @@ type Trie struct {
 	root *TrieNode
 }
 
+func NewTrie() *Trie {
+	return &Trie{root: &TrieNode{children: make([]*TrieNode, 26)}}
+}
+
 func ConstructorTrie() Trie {
 	return Trie{root: &TrieNode{children: make([]*TrieNode, 26)}}
 }
