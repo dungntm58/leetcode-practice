@@ -50,6 +50,7 @@ func main() {
 	// 	n.PrintAll()
 	// }
 	// streamChecker()
+	// fmt.Println(top_question.NthMagicalNumber(5, 2, 4))
 }
 
 func detectSquare() {
