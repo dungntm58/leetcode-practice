@@ -52,6 +52,15 @@ func main() {
 	// streamChecker()
 	// fmt.Println(top_question.NthMagicalNumber(5, 2, 4))
 	// fmt.Println(top_question.CanPartition([]int{1, 5, 11, 5}))
+
+	// tree := top_question.BuildTreeFromPreorderIndorder([]int{1, 2, 3, 4, 6, 7, 5}, []int{2, 1, 6, 4, 7, 3, 5})
+	// codec := top_question.ConstructorTreeCodec()
+	// str := codec.Serialize(tree)
+	// fmt.Println(str)
+	// clonedTree := codec.Deserialize(str)
+	// clonedTree.PreorderTraverse()
+	// fmt.Println()
+	// clonedTree.InorderTraverse()
 }
 
 func detectSquare() {
