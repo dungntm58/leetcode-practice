@@ -51,6 +51,7 @@ func main() {
 	// }
 	// streamChecker()
 	// fmt.Println(top_question.NthMagicalNumber(5, 2, 4))
+	// fmt.Println(top_question.CanPartition([]int{1, 5, 11, 5}))
 }
 
 func detectSquare() {
