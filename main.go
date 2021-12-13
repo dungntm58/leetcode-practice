@@ -61,6 +61,11 @@ func main() {
 	// clonedTree.PreorderTraverse()
 	// fmt.Println()
 	// clonedTree.InorderTraverse()
+
+	// board := [][]byte{{'o', 'a', 'a', 'n'}, {'e', 't', 'a', 'e'}, {'i', 'h', 'k', 'r'}, {'i', 'f', 'l', 'v'}}
+	// fmt.Println(top_question.FindWords(board, []string{"oath", "pea", "eat", "rain"}))
+	// board := [][]byte{{'a', 'a'}}
+	// fmt.Println(top_question.FindWords(board, []string{"aaa"}))
 }
 
 func detectSquare() {

@@ -70,14 +70,29 @@ func (this *Trie) StartsWith(prefix string) bool {
 	return true
 }
 
+func (trie *Trie) GetRoot() *TrieNode {
+	return trie.root
+}
+
 type TrieNode struct {
-	val         rune
 	children    []*TrieNode
 	isEndOfWord bool
 }
 
+func (node TrieNode) Child(char rune) *TrieNode {
+	return node.children[char-'a']
+}
+
+func (node TrieNode) IsEndOfWord() bool {
+	return node.isEndOfWord
+}
+
+func (node *TrieNode) MarkEndOfWordAsFalse() {
+	node.isEndOfWord = false
+}
+
 func NewTrieNode(value rune, isEndOfWord bool) *TrieNode {
-	return &TrieNode{val: value, children: make([]*TrieNode, 26), isEndOfWord: isEndOfWord}
+	return &TrieNode{children: make([]*TrieNode, 26), isEndOfWord: isEndOfWord}
 }
 
 /**
