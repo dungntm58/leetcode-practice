@@ -66,6 +66,14 @@ func main() {
 	// fmt.Println(top_question.FindWords(board, []string{"oath", "pea", "eat", "rain"}))
 	// board := [][]byte{{'a', 'a'}}
 	// fmt.Println(top_question.FindWords(board, []string{"aaa"}))
+
+	// grid := [][]byte{
+	// 	{'1', '1', '0', '0', '0'},
+	// 	{'1', '1', '0', '0', '0'},
+	// 	{'0', '0', '1', '0', '0'},
+	// 	{'0', '0', '0', '1', '1'},
+	// }
+	// fmt.Println(top_question.NumIslands(grid))
 }
 
 func detectSquare() {
