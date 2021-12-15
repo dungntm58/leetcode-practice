@@ -74,6 +74,8 @@ func main() {
 	// 	{'0', '0', '0', '1', '1'},
 	// }
 	// fmt.Println(top_question.NumIslands(grid))
+
+	// linkedList()
 }
 
 func detectSquare() {
@@ -117,4 +119,16 @@ func streamChecker() {
 	for _, p := range params {
 		fmt.Println(obj.Query(p))
 	}
+}
+
+func linkedList() {
+	myLinkedList := top_question.ConstructorLinkedList()
+	myLinkedList.AddAtHead(2)
+	myLinkedList.PrintAll()
+	myLinkedList.AddAtHead(1)
+	myLinkedList.PrintAll()
+	myLinkedList.AddAtTail(3)
+	myLinkedList.PrintAll()
+	myLinkedList.DeleteAtIndex(0)
+	myLinkedList.PrintAll()
 }
