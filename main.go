@@ -76,6 +76,8 @@ func main() {
 	// fmt.Println(top_question.NumIslands(grid))
 
 	// linkedList()
+
+	// fmt.Println(top_question.LongestConsecutive([]int{100, 4, 200, 1, 3, 2}))
 }
 
 func detectSquare() {
