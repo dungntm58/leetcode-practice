@@ -80,6 +80,8 @@ func main() {
 	// fmt.Println(top_question.LongestConsecutive([]int{100, 4, 200, 1, 3, 2}))
 	// fmt.Println(top_question.AtMostNGivenDigitSet([]string{"1", "3", "5", "7"}, 100))
 	// fmt.Println(top_question.DecodeString("3[a]2[bc]"))
+
+	// fmt.Println(top_question.CombinationSum4([]int{6, 4, 2, 8}, 6))
 }
 
 func detectSquare() {
