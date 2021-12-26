@@ -82,6 +82,8 @@ func main() {
 	// fmt.Println(top_question.DecodeString("3[a]2[bc]"))
 
 	// fmt.Println(top_question.CombinationSum4([]int{6, 4, 2, 8}, 6))
+	// fmt.Println(top_question.Calculate("-(2+(1+2+2-(1-(1-2)))-3-(4+5+2)-(4-3)+1)+(6+8)"))
+	// fmt.Println(top_question.Calculate("2-4-(8+2-6+(8+4-(1)+8-10))"))
 }
 
 func detectSquare() {
