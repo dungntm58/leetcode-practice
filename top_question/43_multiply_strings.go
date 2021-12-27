@@ -18,8 +18,8 @@ func Multiply(num1 string, num2 string) string {
 	n1 := []rune(num1)
 	n2 := []rune(num2)
 
-	reverse(n1)
-	reverse(n2)
+	reverseRunes(n1)
+	reverseRunes(n2)
 
 	resultLength := num1Len*num2Len + 1
 	result := make([]rune, resultLength)
@@ -39,11 +39,11 @@ func Multiply(num1 string, num2 string) string {
 	for i := 0; i < resultLength; i++ {
 		result[i] += '0'
 	}
-	reverse(result)
+	reverseRunes(result)
 	return string(result)
 }
 
-func reverse(runes []rune) {
+func reverseRunes(runes []rune) {
 	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
 		runes[i], runes[j] = runes[j], runes[i]
 	}

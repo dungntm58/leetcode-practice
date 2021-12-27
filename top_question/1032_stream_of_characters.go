@@ -39,7 +39,7 @@ func ConstructorStreamChecker(words []string) StreamChecker {
 	trie, maxLength := NewTrie(), 0
 	for _, w := range words {
 		runes := []rune(w)
-		reverse(runes)
+		reverseRunes(runes)
 		trie.Insert(string(runes))
 		if len(runes) > maxLength {
 			maxLength = len(runes)

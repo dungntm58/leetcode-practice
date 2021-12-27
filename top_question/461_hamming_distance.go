@@ -22,8 +22,8 @@ func HammingDistance(x int, y int) int {
 	}
 	xArr := []rune(strconv.FormatInt(int64(x), 2))
 	yArr := []rune(strconv.FormatInt(int64(y), 2))
-	reverse(xArr)
-	reverse(yArr)
+	reverseRunes(xArr)
+	reverseRunes(yArr)
 
 	xn := len(xArr)
 	for i, ye := range yArr {
