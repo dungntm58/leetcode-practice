@@ -85,6 +85,10 @@ func main() {
 	// fmt.Println(top_question.Calculate("-(2+(1+2+2-(1-(1-2)))-3-(4+5+2)-(4-3)+1)+(6+8)"))
 	// fmt.Println(top_question.Calculate("2-4-(8+2-6+(8+4-(1)+8-10))"))
 	// fmt.Println(top_question.LongestPalindrome("abacdfgdcaba"))
+
+	// arr := []int{1, 0, 0, 2, 3, 0, 4, 5, 0}
+	// top_question.DuplicateZeros(arr)
+	// fmt.Println(arr)
 }
 
 func detectSquare() {
