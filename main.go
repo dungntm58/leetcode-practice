@@ -89,6 +89,8 @@ func main() {
 	// arr := []int{1, 0, 0, 2, 3, 0, 4, 5, 0}
 	// top_question.DuplicateZeros(arr)
 	// fmt.Println(arr)
+
+	fmt.Println(top_question.SpiralOrder([][]int{{1}, {2}}))
 }
 
 func detectSquare() {
