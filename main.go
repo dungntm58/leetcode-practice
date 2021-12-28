@@ -90,7 +90,7 @@ func main() {
 	// top_question.DuplicateZeros(arr)
 	// fmt.Println(arr)
 
-	fmt.Println(top_question.SpiralOrder([][]int{{1}, {2}}))
+	// fmt.Println(top_question.SpiralOrder([][]int{{1}, {2}}))
 }
 
 func detectSquare() {
