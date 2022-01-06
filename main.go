@@ -93,6 +93,7 @@ func main() {
 	// fmt.Println(top_question.SpiralOrder([][]int{{1}, {2}}))
 	// fmt.Println(top_question.Partition("ababbbabbaba"))
 	// fmt.Println(top_question.CountDigitOne(50124))
+	// fmt.Println(top_question.CarPooling([][]int{{3, 3, 7}, {1, 1, 4}, {2, 1, 5}}, 5))
 }
 
 func detectSquare() {
