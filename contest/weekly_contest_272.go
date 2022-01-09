@@ -65,7 +65,19 @@ LOOP:
 // We are also able to place spaces before the first character of the string.
 
 func AddSpaces(s string, spaces []int) string {
-	return ""
+	r := make([]byte, len(s)+len(spaces))
+	for i, s := range spaces {
+		r[i+s] = ' '
+	}
+	i := 0
+	for j := 0; j < len(s); j++ {
+		if r[i] == ' ' {
+			i++
+		}
+		r[i] = s[j]
+		i++
+	}
+	return string(r)
 }
 
 // 2110
