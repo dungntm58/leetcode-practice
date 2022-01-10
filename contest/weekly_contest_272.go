@@ -102,8 +102,34 @@ func AddSpaces(s string, spaces []int) string {
 // Explanation: There is 1 smooth descent period: [1]
 
 func GetDescentPeriods(prices []int) int64 {
-	return 0
+	pre, r := 0, 1
+	for i := 1; i < len(prices); i++ {
+		if prices[i-1]-prices[i] == 1 {
+			r += i - pre + 1
+		} else {
+			r++
+			pre = i
+		}
+	}
+	return int64(r)
 }
+
+// func GetDescentPeriods(prices []int) int64 {
+// 	result := int64(0)
+// 	start, end := -1, -1
+// 	for i := 1; i <= len(prices); i++ {
+// 		if i < len(prices) && prices[i-1]-prices[i] == 1 {
+// 			if start == -1 {
+// 				start = i - 1
+// 			}
+// 			end = i
+// 		} else {
+// 			result += int64((end - start) * (end - start + 1) / 2)
+// 			start, end = -1, -1
+// 		}
+// 	}
+// 	return result + int64(len(prices))
+// }
 
 // 2111
 /// Minimum Operations to Make the Array K-Increasing
