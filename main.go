@@ -96,6 +96,7 @@ func main() {
 	// fmt.Println(top_question.CarPooling([][]int{{3, 3, 7}, {1, 1, 4}, {2, 1, 5}}, 5))
 
 	// fmt.Println(contest.GetDescentPeriods([]int{12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 4, 3, 10, 9, 8, 7}))
+	// fmt.Println(top_question.MyAtoi("   +0 123"))
 }
 
 func detectSquare() {
