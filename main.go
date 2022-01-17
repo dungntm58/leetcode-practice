@@ -97,6 +97,7 @@ func main() {
 
 	// fmt.Println(contest.GetDescentPeriods([]int{12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 4, 3, 10, 9, 8, 7}))
 	// fmt.Println(top_question.MyAtoi("   +0 123"))
+	// fmt.Println(top_question.WordPattern("abba", "dog dog dog dog"))
 }
 
 func detectSquare() {
