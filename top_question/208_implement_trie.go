@@ -41,7 +41,7 @@ func (this *Trie) Insert(word string) {
 	curr := this.root
 	for _, c := range word {
 		if curr.children[c-'a'] == nil {
-			curr.children[c-'a'] = NewTrieNode(c, false)
+			curr.children[c-'a'] = NewTrieNode(false)
 		}
 		curr = curr.children[c-'a']
 	}
@@ -91,7 +91,7 @@ func (node *TrieNode) MarkEndOfWordAsFalse() {
 	node.isEndOfWord = false
 }
 
-func NewTrieNode(value rune, isEndOfWord bool) *TrieNode {
+func NewTrieNode(isEndOfWord bool) *TrieNode {
 	return &TrieNode{children: make([]*TrieNode, 26), isEndOfWord: isEndOfWord}
 }
 
