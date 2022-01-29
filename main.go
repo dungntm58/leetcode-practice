@@ -99,6 +99,7 @@ func main() {
 	// fmt.Println(top_question.MyAtoi("   +0 123"))
 	// fmt.Println(top_question.WordPattern("abba", "dog dog dog dog"))
 	// fmt.Println(top_question.SequentialDigits(8511, 23553))
+	// fmt.Println(top_question.LargestRectangleArea([]int{2, 1, 5, 6, 2, 3}))
 }
 
 func detectSquare() {
