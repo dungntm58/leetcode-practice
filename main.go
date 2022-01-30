@@ -100,6 +100,10 @@ func main() {
 	// fmt.Println(top_question.WordPattern("abba", "dog dog dog dog"))
 	// fmt.Println(top_question.SequentialDigits(8511, 23553))
 	// fmt.Println(top_question.LargestRectangleArea([]int{2, 1, 5, 6, 2, 3}))
+
+	// arr := []int{1, 2, 3, 4, 5, 6, 7}
+	// top_question.RotateArray(arr, 6)
+	// fmt.Println(arr)
 }
 
 func detectSquare() {
