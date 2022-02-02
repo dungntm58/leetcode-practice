@@ -104,6 +104,8 @@ func main() {
 	// arr := []int{1, 2, 3, 4, 5, 6, 7}
 	// top_question.RotateArray(arr, 6)
 	// fmt.Println(arr)
+
+	// fmt.Println(top_question.FindAnagrams("baaabbaa", "aba"))
 }
 
 func detectSquare() {
