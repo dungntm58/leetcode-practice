@@ -180,5 +180,5 @@ func MaxRunTime(n int, batteries []int) int64 {
 			l = mid + 1
 		}
 	}
-	return int64(l)
+	return int64(l) - 1
 }
