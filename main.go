@@ -108,6 +108,7 @@ func main() {
 	// fmt.Println(top_question.FindAnagrams("baaabbaa", "aba"))
 	// nums := []int{1, 1, 1, 2, 2, 3, 4}
 	// fmt.Println(top_question.RemoveDuplicates(nums))
+	// fmt.Println(top_question.SubarraySum([]int{-1, 1, 1, -1, 2, 3}, 0))
 }
 
 func detectSquare() {
