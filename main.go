@@ -111,6 +111,7 @@ func main() {
 	// fmt.Println(top_question.SubarraySum([]int{-1, 1, 1, -1, 2, 3}, 0))
 
 	// fmt.Println(top_question.MinimumDeviation([]int{1, 2, 3, 4}))
+	// fmt.Println(top_question.SortList(top_question.NewListNode([]int{4, 2, 1, 3})))
 }
 
 func detectSquare() {
