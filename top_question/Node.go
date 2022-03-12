@@ -7,4 +7,6 @@ type Node struct {
 	Left  *Node
 	Right *Node
 	Next  *Node
+	// 138
+	Random *Node
 }
